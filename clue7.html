@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mission 3 🎶</title>
+
+<style>
+
+body{
+background:#ffcce0;
+font-family:Arial;
+text-align:center;
+padding-top:100px;
+}
+
+.box{
+background:white;
+width:350px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>🎶 Mission 3</h1>
+
+<p>
+Which song reminds me most of you?
+</p>
+
+<input id="song">
+
+<br><br>
+
+<button onclick="go()">
+Unlock
+</button>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function go(){
+
+let s =
+document.getElementById("song")
+.value.toLowerCase();
+
+if(s === "adhento gani vunnapatuga"){
+
+window.location.href="clue4.html";
+
+}else{
+
+document.getElementById("msg")
+.innerHTML="Wrong song 😭";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
